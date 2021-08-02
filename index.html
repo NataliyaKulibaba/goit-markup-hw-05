@@ -54,7 +54,20 @@
      <div class="container">
        <div class="hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button">Заказать услугу</button>
+          <button class="button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p></p>
+              <div class="modal-btn" data-modal-close>
+                <svg class="modal-close">
+                  <use href="./images/svg/close.svg#icon-close">  </use>
+                </svg>
+              </div>
+
+           
+            </div>
+          </div>
+  
         </div>
      </div>
     </section>
@@ -106,24 +119,33 @@
     </section>
 
     <!--Чем мы занимаемся-->
-      <section class="section">
-      <div class="container">
+      <section class="section works">
+      <div class="container works">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="works list">
-          <li class="item">
+          <li class="works-item">
             <a href="./index.html">
               <img src="./images/box1.jpg" alt="Верстка сайтов" width="370" height="294">
+              <div class="works-overlay">
+                <p class="works-description">Десктопные приложения</p>
+              </div>
             </a>
           </li>
-          <li class="item">
+          <li class="works-item">
             <a href="./index.html">
               <img src="./images/box2.jpg" alt="Разработка мобольных приложений" width="370" height="294">
-            </a>
+              <div class="works-overlay">
+                <p class="works-description">Мобильные приложения</p>
+              </div>
+          </a>
           </li>
-          <li class="item">
+          <li class="works-item">
             <a href="./index.html">
               <img src="./images/box3.jpg" alt="Разработка дизайна" width="370" height="294">
-            </a>
+              <div class="works-overlay">
+                <p class="works-description">Дизайнерские решения</p>
+              </div>
+          </a>
           </li>
         </ul>
       </div>
@@ -397,7 +419,7 @@
       </div>
     </section>
   </footer>
-
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
